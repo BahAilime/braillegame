@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Letter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>ThatBrailleGame</h1>
+      <ul>
+        <li><a href="/">Learn</a></li>
+        <li><a href="/letter.html">Letter</a></li>
+        <li><a href="/word.html">Word</a></li>
+      </ul>
+    </nav>
+    <h1>Score: <span class="scoreui"></span></h1>
+    <div class="game">
+      <h1 id="target"></h1>
+      <h2>→</h2>
+      <div class="braillesetter">
+        <button class="braille_btn"></button>
+        <button class="braille_btn"></button>
+        <button class="braille_btn"></button>
+        <button class="braille_btn"></button>
+        <button class="braille_btn"></button>
+        <button class="braille_btn"></button>
+      </div>
+    </div>
+    <button class="ui_btn valid">Submit</button>
+
+    <div class="modal_bg"></div>
+    <div class="modal yes">
+      <h1>That's right !</h1>
+      <h2>1 point added to your score !</h2>
+      <h2>Score: <span class="score"></span></h2>
+      <button class="ui_btn new">Next letter</button>
+    </div>
+
+    <div class="modal no">
+      <h1>That's wrong !</h1>
+      <h2>Curent score: <span class="scoreno"></span></h2>
+      <button class="ui_btn retry">retry (-1)</button>
+      <button class="ui_btn reveal">reveal the answer (-3)</button>
+    </div>
+
+    <div class="modal ans">
+      <h1>Answer:</h1>
+      <h1 class="answer"></h1>
+      <button class="ui_btn anew">Next letter</button>
+    </div>
+  </body>
+  <script src="letter.js"></script>
+</html>
